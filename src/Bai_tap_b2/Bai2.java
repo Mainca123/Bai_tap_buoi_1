@@ -14,10 +14,12 @@ public class Bai2 {
             arr[i] = arr[i-1] + x;
         }
         int Max = Integer.MIN_VALUE;
-        for(int i=k; i<=n; i++) {
-            Max = Math.max(Max, arr[i] - arr[i - k]);
-//            System.out.println(i + " " + (i-k) + " " + arr[i] );
-        }
+        int[] Min = new int[N];
+        Min[0] = 0;
+        for(int i=1; i<=n; i++)
+            Min[i] = Math.min(arr[i],Min[i-1]);
+        for(int i=k; i<=n; i++)
+            Max=Math.max(arr[i]-Min[i-k],Max);
         System.out.println(Max);
     }
 }
