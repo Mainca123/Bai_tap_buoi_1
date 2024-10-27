@@ -7,10 +7,11 @@ public class Bai2 {
         Scanner sc = new Scanner(System.in);
         long n = sc.nextLong();
         long Ket_qua = 1;
-        while(n != 0) {
-            Ket_qua *= n%10;
-            n /= 10;
-        }
-        System.out.println(Ket_qua);
+        if(n != 0)
+            while (n != 0) {
+                Ket_qua *= n % 10;
+                n /= 10;
+            }
+        else Ket_qua = 0;        System.out.println(Math.abs(Ket_qua));
     }
 }

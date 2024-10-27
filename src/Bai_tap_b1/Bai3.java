@@ -8,7 +8,6 @@ public class Bai3 {
         long[] Mang = new long[10];
         for(int i=1; i<=5; i++)
             Mang[i] = sc.nextLong();
-
         long Max = Mang[1], Max_nhi = Max;
         for(int i=2; i<=5; i++)
             if(Mang[i] > Max) {
