@@ -3,9 +3,9 @@ package Bai_tap_b2;
 import java.util.Scanner;
 
 public class Bai2 {
+    public static Scanner sc = new Scanner(System.in);
     public static final int N = 100005;
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         int[] arr = new int[N];
         int n = sc.nextInt(), k = sc.nextInt();
         arr[0] = 0;
