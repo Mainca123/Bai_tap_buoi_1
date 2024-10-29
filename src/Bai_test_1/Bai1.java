@@ -30,7 +30,11 @@ public class Bai1 {
             if(dem==2 && str.charAt(i)=='0')
                 System.out.print(A[1] + " ");
             else {
-                if(dem>=3)
+                if(dem==3 && str.charAt(i+1)=='0' && str.charAt(i+2)=='0'){
+                    System.out.print(B[str.charAt(i) - '0'] + " " + A[3]);
+                    break;
+                }
+                if(dem==3)
                     System.out.print(B[str.charAt(i) - '0'] + " ");
                 else
                 if(dem==2 && str.charAt(i)!='1')
