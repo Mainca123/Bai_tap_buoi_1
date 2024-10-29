@@ -26,7 +26,8 @@ public class Bai2 {
                 }
                 st3+=st.charAt(i);
             }
-
+        st2 = st2.stripLeading();
+        st3 = st3.stripLeading();
         System.out.println(st3);
         System.out.println(st2);
     }

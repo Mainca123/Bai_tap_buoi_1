@@ -23,6 +23,8 @@ public class Bai1 {
         B[8] = "tam";
         B[9] = "chin";
 
+        str = str.replaceFirst("^0+", "");
+        if(str.length()==0) System.out.println(B[0]);
         int dem=str.length();
         for(int i=0; i<str.length(); i++){
             if(dem==2 && str.charAt(i)=='0')
